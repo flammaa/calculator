@@ -11,18 +11,12 @@ public class Calculator2 {
     private List<String> records;
     //생성자 영역
     public Calculator2() {
-
         records = new ArrayList<>();
-
-
     }
-
 
     public int calculate(int number1, String Operation, int number2) {
         /* 위 요구사항에 맞게 구현 */
         /* return 연산 결과 */
-
-
         int result = 0;
 
         switch (Operation) {
@@ -40,12 +34,10 @@ public class Calculator2 {
                     result = number1 / number2;
                 } else {
                     System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
-
                 }
                 break;
             default:
                 System.out.println("유효하지 않은 연산자입니다.");
-
         }
         records.add(number1+Operation+number2 + "=" + result );
             return result;
