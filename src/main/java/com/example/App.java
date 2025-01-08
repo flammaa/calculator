@@ -31,10 +31,14 @@ public class App {
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String reply = sc.next();
 
-            if (reply == "exit") {
+            if (reply.equalsIgnoreCase("exit")) {
                 keepRunning = false;
+                break;
             }
         }
+        calculator.removeResult(calculator.getRecords()); ///??????
+        System.out.println(calculator.getRecords());
+
         System.out.println("계산기를 종료합니다.");
         sc.close();
     }

@@ -9,6 +9,7 @@ public class Calculator2 {
     private int number2;
     private boolean keepRunning;
     private List<String> records;
+
     //생성자 영역
     public Calculator2() {
         records = new ArrayList<>();
@@ -44,13 +45,15 @@ public class Calculator2 {
     }
 
     public List<String> getRecords() {
-        return new ArrayList<>(records);
+        return records;
     }
     public void setRecords(List<String> records) {
-        this.records = records; ///?
+        this.records = records;
+        System.out.println("기존 연산 기록" + records);
     }
-    public void removeRecords(List<String> records) {
-        records.remove(records);
-        System.out.println("연산 기록 초기화");
+    public void removeResult(List<String> records) {
+        records.remove(0); //첫번쨰?
+
+        System.out.println("최종 연산 기록");
     }
 }
