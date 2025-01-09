@@ -3,11 +3,11 @@
 ## Calculator
 
 - 개발기간 : 2025.01.06 ~ 2025.01.08
-- 작성자 : ㅇㅇㅇ
+- 작성자 : 김지영
 
 
 ### 배포주소
-아직 private
+(https://github.com/flammaa/calculator.git)
 
 
 ### 프로젝트 소개(INTRODUCE OF THE PROJECT)
