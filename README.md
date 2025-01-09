@@ -38,7 +38,7 @@ https://github.com/flammaa/calculator.git
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 
-
+<br><br><br><br>
 ## 주요기능(Main function)
 정수를 활용한 사칙연산을 진행합니다.
 
