@@ -15,7 +15,7 @@
 
 두 개의 간단한 숫자입력과, 사칙연산 기호(+, -, *, /) 입력으로 원하는 연산을 수행하도록 할 수 있습니다.
 
-**The Calculator performs basic arithmetic operations on inter inputs.**
+**The Calculator performs basic arithmetic operations on integer inputs.**
 
 You can make the Calculator perform the operation by inputting two simple numbers and the four arithmetic operation symbols(+, -, *, /).
 
@@ -26,11 +26,11 @@ You can make the Calculator perform the operation by inputting two simple number
 ### Requirements
 For building and running the application you need:
 
-- IntelliJ IDEA......어쩌구
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac)
 
 ### Installation
 ```
-$ git clone 어쩌구
+$ git clone 
 ```
 
 ### Stacks
@@ -55,14 +55,18 @@ Input first number and press Enter for operation.
 Input arithmetic operation symbols you want and press Enter.
 
 //이미지 삽입//
-첫 번째 숫자 입력 창에 숫자 입력.
+두 번째 숫자 입력 창에 숫자 입력.
 
 Input second number and press Enter for operation.
 
-계산 결과 출력 및 계산 종료 여부 확인
+계산 결과 출력 및 계산 종료 여부 확인.
 
-Calculation result out and Ask confirmation of end Calculator
+Calculation result out and Ask confirmation of end Calculator.
 
+
+계산 종료 확인 시 계산기록 출력 및 삭제 진행, 계산기 종료.
+
+When confirming the end of the calculation, the calculation record is out and deleted, and the calculator is terminated.
 
 
 
