@@ -7,18 +7,19 @@
 
 
 ### 배포주소
-https://github.com/flammaa/calculator.git)](https://flammaa.github.io/calculator/
+https://flammaa.github.io/calculator/
+
 
 
 ### 프로젝트 소개(INTRODUCE OF THE PROJECT)
 **계산기는 정수 입력에 대한 기본적인 사칙연산 수행을 진행합니다.**
-
+<br><br>
 두 개의 간단한 숫자입력과, 사칙연산 기호(+, -, *, /) 입력으로 원하는 연산을 수행하도록 할 수 있습니다.
-
+<br><br>
 **The Calculator performs basic arithmetic operations on integer inputs.**
 
 You can make the Calculator perform the operation by inputting two simple numbers and the four arithmetic operation symbols(+, -, *, /).
-
+<br><br><br>
 
 
 ## 시작가이드(GUIDE FOR START)
@@ -27,11 +28,11 @@ You can make the Calculator perform the operation by inputting two simple number
 For building and running the application you need:
 
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac)
-
+<br><br>
 ### Installation
 https://github.com/flammaa/calculator.git
 
-
+<br><br>
 ### Stacks
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
