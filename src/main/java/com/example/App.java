@@ -10,7 +10,7 @@ public class App {
         Calculator2 calculator = new Calculator2();
         Scanner sc = new Scanner(System.in);
         boolean keepRunning = true;
-        int result;
+        Double result = (double) 0;
 
  //result 선언
         /* 반복문 시작 */
@@ -27,19 +27,25 @@ public class App {
 //ca2 -class calculate 호출 --> result
 
             result = calculator.calculate(number1, Operation, number2);
+
             System.out.println("결과: " + result);
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String reply = sc.next();
 
-            if (reply.equalsIgnoreCase("exit")) {
-                keepRunning = false;
-                break;
-            }
+        if (reply.equalsIgnoreCase("exit")) {
+            keepRunning = false;
+            break;
         }
-        calculator.removeResult(calculator.getRecords()); ///??????
+    }
+        System.out.println("전체 연산 기록 :" + calculator.getRecords()); // 전체 연산기록 출력
+        System.out.println("첫 번째 연산 기록을 삭제합니다."); // 문제요구사항
+
+        calculator.removeResult(calculator.getRecords());
         System.out.println(calculator.getRecords());
 
         System.out.println("계산기를 종료합니다.");
         sc.close();
     }
 }
+
+

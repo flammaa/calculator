@@ -8,17 +8,17 @@ public class Calculator2 {
     private String Operation;
     private int number2;
     private boolean keepRunning;
-    private List<String> records;
+    private List<Double> records = new ArrayList<>();
 
     //생성자 영역
     public Calculator2() {
         records = new ArrayList<>();
     }
 
-    public int calculate(int number1, String Operation, int number2) {
+    public Double calculate(int number1, String Operation, int number2) {
         /* 위 요구사항에 맞게 구현 */
         /* return 연산 결과 */
-        int result = 0;
+        double result = 0;
 
         switch (Operation) {
             case "+":
@@ -39,21 +39,23 @@ public class Calculator2 {
                 break;
             default:
                 System.out.println("유효하지 않은 연산자입니다.");
+                boolean keepRunning1 = keepRunning;
         }
-        records.add(number1+Operation+number2 + "=" + result );
+        records.add(result);
             return result;
     }
 
-    public List<String> getRecords() {
+    public List<Double> getRecords() {
         return records;
     }
-    public void setRecords(List<String> records) {
-        this.records = records;
-        System.out.println("기존 연산 기록" + records);
-    }
-    public void removeResult(List<String> records) {
-        records.remove(0); //첫번쨰?
 
-        System.out.println("최종 연산 기록");
+    public void setRecords(Double records) {
+        this.records.add(records);
+        System.out.println("기록이 추가되었습니다.");
+    }
+
+    public void removeResult(List<Double> records) {
+        records.remove(0);
+        System.out.println("최종 연산 기록 :");
     }
 }
