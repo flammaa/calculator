@@ -7,7 +7,7 @@
 
 
 ### 배포주소
-(https://github.com/flammaa/calculator.git)
+https://github.com/flammaa/calculator.git)](https://flammaa.github.io/calculator/
 
 
 ### 프로젝트 소개(INTRODUCE OF THE PROJECT)
@@ -29,9 +29,8 @@ For building and running the application you need:
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=mac)
 
 ### Installation
-```
-$ git clone 
-```
+https://github.com/flammaa/calculator.git
+
 
 ### Stacks
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
