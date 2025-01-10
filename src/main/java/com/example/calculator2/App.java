@@ -1,8 +1,5 @@
-package com.example;
+package com.example.calculator2;
 
-import com.example.calculator.Calculator2;
-
-import java.util.Objects;
 import java.util.Scanner;
 
 public class App {
@@ -17,12 +14,20 @@ public class App {
         while(keepRunning) {
             System.out.print("첫 번째 숫자를 입력하세요:");
             int number1 = sc.nextInt();
+            if (number1 < 0) {
+                System.out.println("음수는 입력할 수 없습니다. 프로그램을 재시작합니다.");
+                continue;
+            }
 
             System.out.print("사칙연산 기호를 입력하세요(+, -, *, /): ");
-            String Operation = sc.next();
+            char Operation = sc.next().charAt(0);
 
             System.out.print("두 번째 숫자를 입력하세요:");
             int number2 = sc.nextInt();
+            if (number2 < 0) {
+                System.out.println("음수는 입력할 수 없습니다. 프로그램을 재시작합니다.");
+                continue;
+            }
 
 //ca2 -class calculate 호출 --> result
 

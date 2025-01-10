@@ -24,41 +24,48 @@ public class Calculator {
         while(keepRunning) {
             System.out.println("첫 번째 정수를 입력하세요: ");
             int number1 = sc.nextInt();
-
+            if (number1 < 0) {
+                System.out.println("음수는 입력할 수 없습니다. 프로그램을 재시작합니다.");
+                continue;
+            }
             System.out.println("원하는 사칙연산 기호를 입력하세요(+, -, *, /): ");
-            String Operation = sc.next();
+             char Operation = sc.next().charAt(0);
 
             System.out.println("두 번째 정수를 입력하세요: ");
             int number2 = sc.nextInt();
 
-            int result = 0;
+            if (number2 < 0) {
+                System.out.println("음수는 입력할 수 없습니다. 프로그램을 재시작합니다.");
+                continue;
+            }
+
+            double result = 0;
 
             switch (Operation) {
-                case "+":
+                case '+':
                     result = number1 + number2;
                     break;
-                case "-":
+                case '-':
                     result = number1 - number2;
                     break;
-                case "*":
+                case '*':
                     result = number1 * number2;
                     break;
-                case "/":
+                case '/':
                     if (number2 != 0) {
-                        result = number1 / number2;
+                        result = (double) number1 / number2;
                     } else {
                         System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
                         break;
                     }
                 default:
-                    System.out.println("유효하지 않은 연산자입니다.");
-                    continue;
+                    throw new IllegalArgumentException("사칙연산 기호는 +, -, *, / 중 하나여야 합니다.");
         }
         System.out.println("결과: " + result);
         System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
 
         String reply = sc.next();
-        if (reply == "exit") {
+            if ("exit".equals(reply)) {
             keepRunning = false;
         }
         }
